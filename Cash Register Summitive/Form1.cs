@@ -112,6 +112,7 @@ namespace Cash_Register_Summitive
             Receiptlabel.Text += $"\n\nTendered:          {tenderInput.Text} Gold";
             Receiptlabel.Text += $"\n\nChange:            {change} Gold";
             Receiptlabel.Text += $"\n\n\n\n   Have a nice day come by again";
+            Receiptlabel.Refresh();
 
             for (int x = 0; x < 19; x++)
             {
@@ -119,7 +120,7 @@ namespace Cash_Register_Summitive
                 location = location + 17;
 
                 receiptPrint.Play();
-                Refresh();
+                printingLabel.Refresh();
                 Thread.Sleep(1000);
 
                 printingLabel.Size = new Size(401, size);

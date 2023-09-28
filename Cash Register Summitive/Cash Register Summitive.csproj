@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="Resources\25421__andrewweathers__receipt.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istock-629614894_red_sunset_panorama_fmt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
