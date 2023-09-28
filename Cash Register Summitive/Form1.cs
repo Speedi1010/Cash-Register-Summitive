@@ -86,17 +86,19 @@ namespace Cash_Register_Summitive
             printingLabel.Size = new Size(401, size);
             printingLabel.Location = new Point(280, location);
             SoundPlayer receiptPrint = new SoundPlayer(Properties.Resources.receipt2);
-            if (change <= 0)
-            {
-                printingLabel.Size = new Size(0, 0);
-                Receiptlabel.Text = "You owe me money";
-                return;
-            }
+
 
             if (total <= 0)
             {
                 printingLabel.Size = new Size(0, 0);
                 Receiptlabel.Text = "Buy something you brokie";
+                return;
+            }
+
+            if (change <= 0)
+            {
+                printingLabel.Size = new Size(0, 0);
+                Receiptlabel.Text = "You owe me money";
                 return;
             }
 
