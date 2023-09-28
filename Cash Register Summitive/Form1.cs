@@ -99,6 +99,21 @@ namespace Cash_Register_Summitive
                 Receiptlabel.Text = "Buy something you brokie";
                 return;
             }
+
+            if (untaxedLabel.Text == "пошел на хуй")
+            {
+                Receiptlabel.Text = "\nпошел на хуй";
+                Receiptlabel.Text += "\nпошел на хуй";
+                Receiptlabel.Text += "\nпошел на хуй";
+                Receiptlabel.Text += "\nпошел на хуй";
+                Receiptlabel.Text += "\nпошел на хуй";
+                Receiptlabel.Text += "\nпошел на хуй";
+                printingLabel.Size = new Size(0, 0);
+                printingLabel.Refresh();
+                Receiptlabel.Refresh();
+                return;
+            }
+
             number++;
 
             Receiptlabel.BackColor = Color.White;
@@ -106,8 +121,7 @@ namespace Cash_Register_Summitive
             Receiptlabel.Text += $"\n\nHealing Potions:   {healingPotionamount} for {healingPotionPrice} Gold each";
             Receiptlabel.Text += $"\n\nMana Potions:      {manaPotionamount} for {manaPotionPrice} Gold each";
             Receiptlabel.Text += $"\n\nSleep Potions:     {sleeepPotionamount} for {sleepPotionPrice} Gold each";
-            Receiptlabel.Text += $"\n\nSubtotal:          {subtotal} Gold";
-            Receiptlabel.Text += $"\n\nTax:               {tax} Gold";
+            Receiptlabel.Text += $"\n\nSubtotal:          {subtotal} Gold";              Receiptlabel.Text += $"\n\nTax:               {tax} Gold";
             Receiptlabel.Text += $"\n\nTotal:             {total} Gold";
             Receiptlabel.Text += $"\n\nTendered:          {tenderInput.Text} Gold";
             Receiptlabel.Text += $"\n\nChange:            {change} Gold";

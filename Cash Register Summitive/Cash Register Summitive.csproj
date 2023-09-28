@@ -92,5 +92,8 @@
   <ItemGroup>
     <None Include="Resources\istock-629614894_red_sunset_panorama_fmt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lava.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

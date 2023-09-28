@@ -58,6 +58,7 @@
             this.Calculate.BackColor = System.Drawing.Color.Transparent;
             this.Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Calculate.ForeColor = System.Drawing.SystemColors.Control;
+            this.Calculate.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
             this.Calculate.Location = new System.Drawing.Point(45, 138);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(191, 32);
@@ -243,9 +244,10 @@
             this.ChangeButton.BackColor = System.Drawing.Color.Transparent;
             this.ChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ChangeButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.ChangeButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
             this.ChangeButton.Location = new System.Drawing.Point(29, 291);
             this.ChangeButton.Name = "ChangeButton";
-            this.ChangeButton.Size = new System.Drawing.Size(137, 23);
+            this.ChangeButton.Size = new System.Drawing.Size(137, 28);
             this.ChangeButton.TabIndex = 18;
             this.ChangeButton.Text = "Calculate Change";
             this.ChangeButton.UseVisualStyleBackColor = false;
@@ -264,6 +266,7 @@
             this.ReceiptButton.BackColor = System.Drawing.Color.Transparent;
             this.ReceiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ReceiptButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.ReceiptButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
             this.ReceiptButton.Location = new System.Drawing.Point(29, 351);
             this.ReceiptButton.Name = "ReceiptButton";
             this.ReceiptButton.Size = new System.Drawing.Size(131, 29);
