@@ -289,6 +289,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cash_Register_Summitive.Properties.Resources.istock_629614894_red_sunset_panorama_fmt;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ReceiptButton);
             this.Controls.Add(this.ChangeButton);
@@ -312,6 +313,7 @@
             this.Controls.Add(this.Calculate);
             this.Controls.Add(this.printingLabel);
             this.Controls.Add(this.Receiptlabel);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Potion Shop";
