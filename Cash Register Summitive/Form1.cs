@@ -95,7 +95,7 @@ namespace Cash_Register_Summitive
                 return;
             }
 
-            if (change <= 0)
+            if (change < 0)
             {
                 printingLabel.Size = new Size(0, 0);
                 Receiptlabel.Text = "You owe me money";
@@ -135,12 +135,15 @@ namespace Cash_Register_Summitive
                 size = size - 17;
                 location = location + 17;
 
-                receiptPrint.Play();
-                printingLabel.Refresh();
-                Thread.Sleep(1000);
-
                 printingLabel.Size = new Size(401, size);
                 printingLabel.Location = new Point(280, location);
+
+                receiptPrint.Play();
+
+                Receiptlabel.Refresh();
+                printingLabel.Refresh();
+                Thread.Sleep(800);
+
             }
         }
 
