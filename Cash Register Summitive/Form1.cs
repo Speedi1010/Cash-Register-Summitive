@@ -12,21 +12,21 @@ using System.Media;
 
 namespace Cash_Register_Summitive
 {
-    public partial class Form1 : Form
+    public partial class potionShopForm : Form
     {
         int healingPotionPrice = 4;
-        int healingPotionamount;
+        int healingPotionAmount;
         int manaPotionPrice = 8;
-        int manaPotionamount;
+        int manaPotionAmount;
         int sleepPotionPrice = 10;
-        int sleeepPotionamount;
+        int sleeepPotionAmount;
         int subtotal;
         double tax;
         double total;
         double change;
         int number = 0;
 
-        public Form1()
+        public potionShopForm()
         {
             InitializeComponent();
         }
@@ -40,23 +40,23 @@ namespace Cash_Register_Summitive
         {
             try
             {
-                healingPotionamount = Convert.ToInt16(healingInput.Text);
-                manaPotionamount = Convert.ToInt16(manaInput.Text);
-                sleeepPotionamount = Convert.ToInt16(sleepInput.Text);
+                healingPotionAmount = Convert.ToInt16(healingInput.Text);
+                manaPotionAmount = Convert.ToInt16(manaInput.Text);
+                sleeepPotionAmount = Convert.ToInt16(sleepInput.Text);
 
-                subtotal = healingPotionamount * healingPotionPrice + manaPotionamount * manaPotionPrice + sleeepPotionamount * sleepPotionPrice;
+                subtotal = healingPotionAmount * healingPotionPrice + manaPotionAmount * manaPotionPrice + sleeepPotionAmount * sleepPotionPrice;
                 tax = subtotal * .25;
                 total = subtotal + tax;
 
-                untaxedLabel.Text = $"{subtotal} Gold";
-                TaxLabel.Text = $"{tax} Gold";
-                totalLabel.Text = $"{total} Gold";
+                subtotalOutput.Text = $"{subtotal} Gold";
+                taxOutput.Text = $"{tax} Gold";
+                totalOutput.Text = $"{total} Gold";
             }
             catch
             {
-                untaxedLabel.Text = "пошел на хуй";
-                TaxLabel.Text = "пошел на хуй";
-                totalLabel.Text = "пошел на хуй";
+                subtotalOutput.Text = "пошел на хуй";
+                taxOutput.Text = "пошел на хуй";
+                totalOutput.Text = "пошел на хуй";
             }
         }
 
@@ -91,44 +91,44 @@ namespace Cash_Register_Summitive
             if (total <= 0)
             {
                 printingLabel.Size = new Size(0, 0);
-                Receiptlabel.Text = "Buy something you brokie";
+                receiptOutput.Text = "Buy something you brokie";
                 return;
             }
 
             if (change < 0)
             {
                 printingLabel.Size = new Size(0, 0);
-                Receiptlabel.Text = "You owe me money";
+                receiptOutput.Text = "You owe me money";
                 return;
             }
 
-            if (untaxedLabel.Text == "пошел на хуй")
+            if (subtotalOutput.Text == "пошел на хуй")
             {
-                Receiptlabel.Text = "\nпошел на хуй";
-                Receiptlabel.Text += "\nпошел на хуй";
-                Receiptlabel.Text += "\nпошел на хуй";
-                Receiptlabel.Text += "\nпошел на хуй";
-                Receiptlabel.Text += "\nпошел на хуй";
-                Receiptlabel.Text += "\nпошел на хуй";
+                receiptOutput.Text = "\nпошел на хуй";
+                receiptOutput.Text += "\nпошел на хуй";
+                receiptOutput.Text += "\nпошел на хуй";
+                receiptOutput.Text += "\nпошел на хуй";
+                receiptOutput.Text += "\nпошел на хуй";
+                receiptOutput.Text += "\nпошел на хуй";
                 printingLabel.Size = new Size(0, 0);
                 printingLabel.Refresh();
-                Receiptlabel.Refresh();
+                receiptOutput.Refresh();
                 return;
             }
 
             number++;
 
-            Receiptlabel.BackColor = Color.White;
-            Receiptlabel.Text = $"          The Devil's Potion Shop\n\n                 Receipt {number}";
-            Receiptlabel.Text += $"\n\nHealing Potions:   {healingPotionamount} for {healingPotionPrice} Gold each";
-            Receiptlabel.Text += $"\n\nMana Potions:      {manaPotionamount} for {manaPotionPrice} Gold each";
-            Receiptlabel.Text += $"\n\nSleep Potions:     {sleeepPotionamount} for {sleepPotionPrice} Gold each";
-            Receiptlabel.Text += $"\n\nSubtotal:          {subtotal} Gold";              Receiptlabel.Text += $"\n\nTax:               {tax} Gold";
-            Receiptlabel.Text += $"\n\nTotal:             {total} Gold";
-            Receiptlabel.Text += $"\n\nTendered:          {tenderInput.Text} Gold";
-            Receiptlabel.Text += $"\n\nChange:            {change} Gold";
-            Receiptlabel.Text += $"\n\n\n\n   Have a nice day come by again";
-            Receiptlabel.Refresh();
+            receiptOutput.BackColor = Color.White;
+            receiptOutput.Text = $"          The Devil's Potion Shop\n\n                 Receipt {number}";
+            receiptOutput.Text += $"\n\nHealing Potions:   {healingPotionAmount} for {healingPotionPrice} Gold each";
+            receiptOutput.Text += $"\n\nMana Potions:      {manaPotionAmount} for {manaPotionPrice} Gold each";
+            receiptOutput.Text += $"\n\nSleep Potions:     {sleeepPotionAmount} for {sleepPotionPrice} Gold each";
+            receiptOutput.Text += $"\n\nSubtotal:          {subtotal} Gold"; receiptOutput.Text += $"\n\nTax:               {tax} Gold";
+            receiptOutput.Text += $"\n\nTotal:             {total} Gold";
+            receiptOutput.Text += $"\n\nTendered:          {tenderInput.Text} Gold";
+            receiptOutput.Text += $"\n\nChange:            {change} Gold";
+            receiptOutput.Text += $"\n\n\n\n   Have a nice day come by again";
+            receiptOutput.Refresh();
 
             for (int x = 0; x < 19; x++)
             {
@@ -140,18 +140,13 @@ namespace Cash_Register_Summitive
 
                 receiptPrint.Play();
 
-                Receiptlabel.Refresh();
+                receiptOutput.Refresh();
                 printingLabel.Refresh();
                 Thread.Sleep(800);
 
             }
         }
 
-        private void printingLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }
 

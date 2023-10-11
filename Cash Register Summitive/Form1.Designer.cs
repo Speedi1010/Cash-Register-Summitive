@@ -1,6 +1,6 @@
 ﻿namespace Cash_Register_Summitive
 {
-    partial class Form1
+    partial class potionShopForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(potionShopForm));
             this.Calculate = new System.Windows.Forms.Button();
-            this.healingPotion = new System.Windows.Forms.Label();
-            this.manaPotion = new System.Windows.Forms.Label();
-            this.sleepPotion = new System.Windows.Forms.Label();
+            this.healingPotionLabel = new System.Windows.Forms.Label();
+            this.manaPotionLabel = new System.Windows.Forms.Label();
+            this.sleepPotionLabel = new System.Windows.Forms.Label();
             this.healingInput = new System.Windows.Forms.TextBox();
             this.manaInput = new System.Windows.Forms.TextBox();
             this.sleepInput = new System.Windows.Forms.TextBox();
             this.subLabel = new System.Windows.Forms.Label();
-            this.untaxedLabel = new System.Windows.Forms.Label();
-            this.ta = new System.Windows.Forms.Label();
-            this.TaxLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.subtotalOutput = new System.Windows.Forms.Label();
+            this.taxLabel = new System.Windows.Forms.Label();
+            this.taxOutput = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.totalOutput = new System.Windows.Forms.Label();
+            this.tenderedLabel = new System.Windows.Forms.Label();
+            this.barLabel = new System.Windows.Forms.Label();
             this.tenderInput = new System.Windows.Forms.TextBox();
             this.changeLabel = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
-            this.ChangeButton = new System.Windows.Forms.Button();
-            this.Receiptlabel = new System.Windows.Forms.Label();
-            this.ReceiptButton = new System.Windows.Forms.Button();
+            this.changeButton = new System.Windows.Forms.Button();
+            this.receiptOutput = new System.Windows.Forms.Label();
+            this.receiptButton = new System.Windows.Forms.Button();
             this.printingLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -67,38 +67,38 @@
             this.Calculate.UseVisualStyleBackColor = false;
             this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
-            // healingPotion
+            // healingPotionLabel
             // 
-            this.healingPotion.AutoSize = true;
-            this.healingPotion.BackColor = System.Drawing.Color.Transparent;
-            this.healingPotion.ForeColor = System.Drawing.SystemColors.Control;
-            this.healingPotion.Location = new System.Drawing.Point(45, 38);
-            this.healingPotion.Name = "healingPotion";
-            this.healingPotion.Size = new System.Drawing.Size(109, 16);
-            this.healingPotion.TabIndex = 1;
-            this.healingPotion.Text = "Potion of Healing";
+            this.healingPotionLabel.AutoSize = true;
+            this.healingPotionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.healingPotionLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.healingPotionLabel.Location = new System.Drawing.Point(45, 38);
+            this.healingPotionLabel.Name = "healingPotionLabel";
+            this.healingPotionLabel.Size = new System.Drawing.Size(109, 16);
+            this.healingPotionLabel.TabIndex = 1;
+            this.healingPotionLabel.Text = "Potion of Healing";
             // 
-            // manaPotion
+            // manaPotionLabel
             // 
-            this.manaPotion.AutoSize = true;
-            this.manaPotion.BackColor = System.Drawing.Color.Transparent;
-            this.manaPotion.ForeColor = System.Drawing.SystemColors.Control;
-            this.manaPotion.Location = new System.Drawing.Point(45, 74);
-            this.manaPotion.Name = "manaPotion";
-            this.manaPotion.Size = new System.Drawing.Size(96, 16);
-            this.manaPotion.TabIndex = 2;
-            this.manaPotion.Text = "Potion of Mana";
+            this.manaPotionLabel.AutoSize = true;
+            this.manaPotionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.manaPotionLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.manaPotionLabel.Location = new System.Drawing.Point(45, 74);
+            this.manaPotionLabel.Name = "manaPotionLabel";
+            this.manaPotionLabel.Size = new System.Drawing.Size(96, 16);
+            this.manaPotionLabel.TabIndex = 2;
+            this.manaPotionLabel.Text = "Potion of Mana";
             // 
-            // sleepPotion
+            // sleepPotionLabel
             // 
-            this.sleepPotion.AutoSize = true;
-            this.sleepPotion.BackColor = System.Drawing.Color.Transparent;
-            this.sleepPotion.ForeColor = System.Drawing.SystemColors.Control;
-            this.sleepPotion.Location = new System.Drawing.Point(45, 108);
-            this.sleepPotion.Name = "sleepPotion";
-            this.sleepPotion.Size = new System.Drawing.Size(98, 16);
-            this.sleepPotion.TabIndex = 3;
-            this.sleepPotion.Text = "Potion of Sleep";
+            this.sleepPotionLabel.AutoSize = true;
+            this.sleepPotionLabel.BackColor = System.Drawing.Color.Transparent;
+            this.sleepPotionLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.sleepPotionLabel.Location = new System.Drawing.Point(45, 108);
+            this.sleepPotionLabel.Name = "sleepPotionLabel";
+            this.sleepPotionLabel.Size = new System.Drawing.Size(98, 16);
+            this.sleepPotionLabel.TabIndex = 3;
+            this.sleepPotionLabel.Text = "Potion of Sleep";
             // 
             // healingInput
             // 
@@ -138,76 +138,76 @@
             this.subLabel.TabIndex = 7;
             this.subLabel.Text = "Subtotal;";
             // 
-            // untaxedLabel
+            // subtotalOutput
             // 
-            this.untaxedLabel.AutoSize = true;
-            this.untaxedLabel.BackColor = System.Drawing.Color.Transparent;
-            this.untaxedLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.untaxedLabel.Location = new System.Drawing.Point(166, 183);
-            this.untaxedLabel.Name = "untaxedLabel";
-            this.untaxedLabel.Size = new System.Drawing.Size(0, 16);
-            this.untaxedLabel.TabIndex = 8;
+            this.subtotalOutput.AutoSize = true;
+            this.subtotalOutput.BackColor = System.Drawing.Color.Transparent;
+            this.subtotalOutput.ForeColor = System.Drawing.SystemColors.Control;
+            this.subtotalOutput.Location = new System.Drawing.Point(166, 183);
+            this.subtotalOutput.Name = "subtotalOutput";
+            this.subtotalOutput.Size = new System.Drawing.Size(0, 16);
+            this.subtotalOutput.TabIndex = 8;
             // 
-            // ta
+            // taxLabel
             // 
-            this.ta.AutoSize = true;
-            this.ta.BackColor = System.Drawing.Color.Transparent;
-            this.ta.ForeColor = System.Drawing.SystemColors.Control;
-            this.ta.Location = new System.Drawing.Point(71, 199);
-            this.ta.Name = "ta";
-            this.ta.Size = new System.Drawing.Size(33, 16);
-            this.ta.TabIndex = 9;
-            this.ta.Text = "Tax:";
+            this.taxLabel.AutoSize = true;
+            this.taxLabel.BackColor = System.Drawing.Color.Transparent;
+            this.taxLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.taxLabel.Location = new System.Drawing.Point(71, 199);
+            this.taxLabel.Name = "taxLabel";
+            this.taxLabel.Size = new System.Drawing.Size(33, 16);
+            this.taxLabel.TabIndex = 9;
+            this.taxLabel.Text = "Tax:";
             // 
-            // TaxLabel
+            // taxOutput
             // 
-            this.TaxLabel.AutoSize = true;
-            this.TaxLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TaxLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TaxLabel.Location = new System.Drawing.Point(166, 199);
-            this.TaxLabel.Name = "TaxLabel";
-            this.TaxLabel.Size = new System.Drawing.Size(0, 16);
-            this.TaxLabel.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(63, 215);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 16);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Total:";
+            this.taxOutput.AutoSize = true;
+            this.taxOutput.BackColor = System.Drawing.Color.Transparent;
+            this.taxOutput.ForeColor = System.Drawing.SystemColors.Control;
+            this.taxOutput.Location = new System.Drawing.Point(166, 199);
+            this.taxOutput.Name = "taxOutput";
+            this.taxOutput.Size = new System.Drawing.Size(0, 16);
+            this.taxOutput.TabIndex = 10;
             // 
             // totalLabel
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.BackColor = System.Drawing.Color.Transparent;
             this.totalLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.totalLabel.Location = new System.Drawing.Point(166, 215);
+            this.totalLabel.Location = new System.Drawing.Point(63, 215);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(0, 16);
-            this.totalLabel.TabIndex = 12;
+            this.totalLabel.Size = new System.Drawing.Size(41, 16);
+            this.totalLabel.TabIndex = 11;
+            this.totalLabel.Text = "Total:";
             // 
-            // label2
+            // totalOutput
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(34, 263);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Tendered:";
+            this.totalOutput.AutoSize = true;
+            this.totalOutput.BackColor = System.Drawing.Color.Transparent;
+            this.totalOutput.ForeColor = System.Drawing.SystemColors.Control;
+            this.totalOutput.Location = new System.Drawing.Point(166, 215);
+            this.totalOutput.Name = "totalOutput";
+            this.totalOutput.Size = new System.Drawing.Size(0, 16);
+            this.totalOutput.TabIndex = 12;
             // 
-            // label3
+            // tenderedLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(26, 235);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 18);
-            this.label3.TabIndex = 14;
+            this.tenderedLabel.AutoSize = true;
+            this.tenderedLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tenderedLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.tenderedLabel.Location = new System.Drawing.Point(34, 263);
+            this.tenderedLabel.Name = "tenderedLabel";
+            this.tenderedLabel.Size = new System.Drawing.Size(70, 16);
+            this.tenderedLabel.TabIndex = 13;
+            this.tenderedLabel.Text = "Tendered:";
+            // 
+            // barLabel
+            // 
+            this.barLabel.BackColor = System.Drawing.Color.Black;
+            this.barLabel.Location = new System.Drawing.Point(26, 235);
+            this.barLabel.Name = "barLabel";
+            this.barLabel.Size = new System.Drawing.Size(262, 18);
+            this.barLabel.TabIndex = 14;
             // 
             // tenderInput
             // 
@@ -239,41 +239,41 @@
             this.changeOutput.Size = new System.Drawing.Size(0, 16);
             this.changeOutput.TabIndex = 17;
             // 
-            // ChangeButton
+            // changeButton
             // 
-            this.ChangeButton.BackColor = System.Drawing.Color.Transparent;
-            this.ChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ChangeButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.ChangeButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
-            this.ChangeButton.Location = new System.Drawing.Point(29, 291);
-            this.ChangeButton.Name = "ChangeButton";
-            this.ChangeButton.Size = new System.Drawing.Size(137, 28);
-            this.ChangeButton.TabIndex = 18;
-            this.ChangeButton.Text = "Calculate Change";
-            this.ChangeButton.UseVisualStyleBackColor = false;
-            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click);
+            this.changeButton.BackColor = System.Drawing.Color.Transparent;
+            this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.changeButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.changeButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
+            this.changeButton.Location = new System.Drawing.Point(29, 291);
+            this.changeButton.Name = "changeButton";
+            this.changeButton.Size = new System.Drawing.Size(137, 28);
+            this.changeButton.TabIndex = 18;
+            this.changeButton.Text = "Calculate Change";
+            this.changeButton.UseVisualStyleBackColor = false;
+            this.changeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
-            // Receiptlabel
+            // receiptOutput
             // 
-            this.Receiptlabel.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Receiptlabel.Location = new System.Drawing.Point(378, 38);
-            this.Receiptlabel.Name = "Receiptlabel";
-            this.Receiptlabel.Size = new System.Drawing.Size(401, 397);
-            this.Receiptlabel.TabIndex = 19;
+            this.receiptOutput.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receiptOutput.Location = new System.Drawing.Point(378, 38);
+            this.receiptOutput.Name = "receiptOutput";
+            this.receiptOutput.Size = new System.Drawing.Size(401, 397);
+            this.receiptOutput.TabIndex = 19;
             // 
-            // ReceiptButton
+            // receiptButton
             // 
-            this.ReceiptButton.BackColor = System.Drawing.Color.Transparent;
-            this.ReceiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ReceiptButton.ForeColor = System.Drawing.SystemColors.Control;
-            this.ReceiptButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
-            this.ReceiptButton.Location = new System.Drawing.Point(29, 351);
-            this.ReceiptButton.Name = "ReceiptButton";
-            this.ReceiptButton.Size = new System.Drawing.Size(131, 29);
-            this.ReceiptButton.TabIndex = 20;
-            this.ReceiptButton.Text = "Print Receipt";
-            this.ReceiptButton.UseVisualStyleBackColor = false;
-            this.ReceiptButton.Click += new System.EventHandler(this.ReceiptButton_Click);
+            this.receiptButton.BackColor = System.Drawing.Color.Transparent;
+            this.receiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.receiptButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.receiptButton.Image = global::Cash_Register_Summitive.Properties.Resources.lava;
+            this.receiptButton.Location = new System.Drawing.Point(29, 351);
+            this.receiptButton.Name = "receiptButton";
+            this.receiptButton.Size = new System.Drawing.Size(131, 29);
+            this.receiptButton.TabIndex = 20;
+            this.receiptButton.Text = "Print Receipt";
+            this.receiptButton.UseVisualStyleBackColor = false;
+            this.receiptButton.Click += new System.EventHandler(this.ReceiptButton_Click);
             // 
             // printingLabel
             // 
@@ -282,40 +282,39 @@
             this.printingLabel.Name = "printingLabel";
             this.printingLabel.Size = new System.Drawing.Size(401, 397);
             this.printingLabel.TabIndex = 21;
-            this.printingLabel.Click += new System.EventHandler(this.printingLabel_Click);
             // 
-            // Form1
+            // potionShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cash_Register_Summitive.Properties.Resources.istock_629614894_red_sunset_panorama_fmt;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ReceiptButton);
-            this.Controls.Add(this.ChangeButton);
+            this.Controls.Add(this.receiptButton);
+            this.Controls.Add(this.changeButton);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.tenderInput);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.barLabel);
+            this.Controls.Add(this.tenderedLabel);
+            this.Controls.Add(this.totalOutput);
             this.Controls.Add(this.totalLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TaxLabel);
-            this.Controls.Add(this.ta);
-            this.Controls.Add(this.untaxedLabel);
+            this.Controls.Add(this.taxOutput);
+            this.Controls.Add(this.taxLabel);
+            this.Controls.Add(this.subtotalOutput);
             this.Controls.Add(this.subLabel);
             this.Controls.Add(this.sleepInput);
             this.Controls.Add(this.manaInput);
             this.Controls.Add(this.healingInput);
-            this.Controls.Add(this.sleepPotion);
-            this.Controls.Add(this.manaPotion);
-            this.Controls.Add(this.healingPotion);
+            this.Controls.Add(this.sleepPotionLabel);
+            this.Controls.Add(this.manaPotionLabel);
+            this.Controls.Add(this.healingPotionLabel);
             this.Controls.Add(this.Calculate);
             this.Controls.Add(this.printingLabel);
-            this.Controls.Add(this.Receiptlabel);
+            this.Controls.Add(this.receiptOutput);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "potionShopForm";
             this.Text = "Potion Shop";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -326,26 +325,26 @@
         #endregion
 
         private System.Windows.Forms.Button Calculate;
-        private System.Windows.Forms.Label healingPotion;
-        private System.Windows.Forms.Label manaPotion;
-        private System.Windows.Forms.Label sleepPotion;
+        private System.Windows.Forms.Label healingPotionLabel;
+        private System.Windows.Forms.Label manaPotionLabel;
+        private System.Windows.Forms.Label sleepPotionLabel;
         private System.Windows.Forms.TextBox healingInput;
         private System.Windows.Forms.TextBox manaInput;
         private System.Windows.Forms.TextBox sleepInput;
         private System.Windows.Forms.Label subLabel;
-        private System.Windows.Forms.Label untaxedLabel;
-        private System.Windows.Forms.Label ta;
-        private System.Windows.Forms.Label TaxLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label subtotalOutput;
+        private System.Windows.Forms.Label taxLabel;
+        private System.Windows.Forms.Label taxOutput;
         private System.Windows.Forms.Label totalLabel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label totalOutput;
+        private System.Windows.Forms.Label tenderedLabel;
+        private System.Windows.Forms.Label barLabel;
         private System.Windows.Forms.TextBox tenderInput;
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Label changeOutput;
-        private System.Windows.Forms.Button ChangeButton;
-        private System.Windows.Forms.Label Receiptlabel;
-        private System.Windows.Forms.Button ReceiptButton;
+        private System.Windows.Forms.Button changeButton;
+        private System.Windows.Forms.Label receiptOutput;
+        private System.Windows.Forms.Button receiptButton;
         private System.Windows.Forms.Label printingLabel;
     }
 }
